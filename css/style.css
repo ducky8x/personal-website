@@ -1,0 +1,193 @@
+/* External style sheet */
+body {
+  background-color: #FDF3E1;
+  font-family: "Times New Roman", Times, sans-serif;
+  color: #3B2A1E;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* Header and nav stay pinned to the top of the screen */
+#top {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 960px;
+  margin-left: -480px;
+  z-index: 10;
+}
+
+.selected {
+  background-color: #71320e;
+}
+
+#header {
+  position: relative;
+  z-index: 1;
+  height: 80px;
+  background-color: #E6D2B8;
+  background-image: url(../images/gradient.png);
+  background-repeat: repeat-x;
+}
+
+.site-name {
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  z-index: 2;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 34px;
+}
+
+#nav {
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  background-color: #8C6A4F;
+}
+
+#nav li {
+  float: left;
+}
+
+#nav a {
+  display: block;
+  width: 240px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #FFFAF2;
+}
+
+#content {
+  margin-top: 120px; /* room for the fixed header and nav */
+  padding: 20px;
+  background-color: #FFFAF2;
+  background-image: url(../images/tiles.png);
+  background-repeat: repeat;
+}
+
+a:link {
+  color: #652d00;
+}
+a:visited {
+  color: #d35f00;
+}
+a:hover {
+  color: #f0a200;
+}
+a:active {
+  color: #ff6600;
+}
+
+
+.title {
+  font-size: 40px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: 20px;
+}
+
+.text {
+  margin: 0 0 12px 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+.table th, .table td {
+  padding: 8px 12px;
+  border: 1px solid #8C6A4F;
+}
+
+.list {
+  margin: 0 0 12px 0;
+}
+
+.fixed { /*used in fun fact*/
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  width: 220px;
+  margin: 0 10px 10px 0;
+  padding: 10px;
+  border: 3px solid #E07A3F;
+  background-color: #FCE59A;
+}
+
+.clear {
+  clear: both;
+}
+
+.image-group {
+  width: 600px;
+}
+
+.image-stack img{
+  float: left;
+  height: 300px;
+  margin-right: 10px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Feedback form on the Try It page */
+.feedback-form {
+  width: 700px;
+  padding: 10px;
+  margin: 0 0 12px 0;
+  border: 1px solid #8C6A4F;
+}
+
+.left-column {
+  float: left;
+  width: 150px;
+  padding: 10px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.right-column {
+  padding: 10px;
+}
+
+.submit {
+  text-align: center;
+  padding: 15px;
+}
+
+.caption {
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+}
+
+#footer {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 13px;
+  background-color: #8C6A4F;
+  color: #FFFAF2;
+}
+
+#footer a {
+  color: #FFFAF2;
+}

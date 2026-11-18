@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Learning 2048 | How It Learns</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start your code here -->
+    <div id="wrapper">
+      <div id="top">
+        <div id="header">
+          <div class="site-name">Learning 2048 &ndash; Joowon Shin</div>
+        </div>
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-ml-works.html">How ML Works</a></li>
+          <li><a href="how-it-learns.html" class="selected">How It Learns</a></li>
+          <li><a href="try-it.html">Try It</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div><h1 class="title">How It Learns</h1></div>
+        <div><p class="text">My reinforcement learning model learns through <span class="italic">trial and error.</span> Trial and error is the process of testing different actions, observing which ones work, and tuning the approach.</p></div>
+        <div><p class="text">This is done through rewards. A reward can be given to a model if it makes the correct decision. It can also be penalized if it makes a wrong decision. For our 2048 model, I gave it a reward every time it merged pieces, worth more for bigger tiles. I also gave it a penalty for every move so that it gets pressured to make the most efficient moves.</p></div>
+        <div><p class="text">Due to this process of learning, models get better over time. The more it learns, the better it is at solving the given problem. I ran my model thousands of times for it to be able to consistently beat the game.</p></div>
+        <div><p class="text">However, there's a catch: local and global optima. When training, the model will find rewarding actions in its immediate region, eventually finding a <span class="italic">local optimum.</span> Even though there are better strategies in the long run, it can't find them because it's stuck in a local optimum.</p></div>
+        <div><p class="text"> You can imagine this as a landscape with two valleys. Think of height as penalty: lower is better. When the ball is dropped, it settles in the <span class="italic">local minimum.</span> If it could roll over the small hill, it would reach the global minimum; however, it is not able to go over the hill because its reward system is trying to maintain the lowest penalty and highest reward. In other words, gravity is too strong for the ball to roll up the hill and reach the global minimum.</p></div>
+        <div class="image-group">
+          <div><img src="images/hills.png" alt="A ball stuck in a shallow valley next to a deeper valley" width="600"/></div>
+          <div><p class="text caption">An example image of two hills and a ball stuck in a "local minimum"</p></div>
+        </div>
+        <div><p class="text">To try my RL 2048 model, check out <a href="try-it.html">Try It</a></p></div>
+        <div class="clear"></div>
+      </div>
+      <div id="footer">Sources: <a href="https://en.wikipedia.org/wiki/2048_(video_game)">Wikipedia: 2048 (video game)</a> | <a href="https://play2048.co/">Play 2048</a></div>
+      
+    </div>
+    <!-- End your code here -->
+  </body>
+</html>
