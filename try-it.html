@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Learning 2048 | Try It</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start your code here -->
+    <div id="wrapper">
+      <div id="top">
+        <div id="header">
+          <div class="site-name">Learning 2048 &ndash; Joowon Shin</div>
+        </div>
+        <ul id="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-ml-works.html">How ML Works</a></li>
+          <li><a href="how-it-learns.html">How It Learns</a></li>
+          <li><a href="try-it.html" class="selected">Try It</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div><h1 class="title">Try It</h1></div>
+        <div><h2 class="intro">This is a demo model that I trained myself.</h2></div>
+        <div><p class="text">It learns by playing the game over and over and learning from its mistakes.</p></div>
+        <div><p class="text">You can play it and try my trained model <a href="https://ducky8x.github.io/2048-ai/" target="_blank">here</a>, or click the image below.</p></div>
+        <div class="image-stack">
+          <a href="https://ducky8x.github.io/2048-ai/" target="_blank">
+            <img src="images/2048-ml.png" alt="The website for the 2048 ML model"/>
+          </a>
+          <a href="https://github.com/ducky8x/2048-ai" target="_blank">
+            <img src="images/2048-ai.png" alt="The Github page for the 2048 project"/>
+          </a>
+        </div>
+        <div class="clear"></div>
+        <div><p class="text">You can also check out the GitHub for this separate project <a href="https://github.com/ducky8x/2048-ai" target="_blank">here</a>, or click the image of my Github page above.</p></div>
+        <div><p class="text">For details on how the model works, check out <a href="how-ml-works.html">How ML Works</a>. For more information on how it learns, check out <a href="how-it-learns.html">How It Learns</a>.</p></div>
+        <div><p class="text">If you have any questions or feedback, feel free fill out the following form or reach out! My home email is joo1.wn&#64;gmail.com. You can also contact me via GitHub or Discord; my user is ducky8x on both.</p></div>
+        <div>
+          <form class="feedback-form" method="post" action="try-it.html">
+            <fieldset>
+              <legend>Feedback</legend>
+
+              <div class="left-column">Name:</div>
+              <div class="right-column">
+                <input type="text" name="name" size="40"/>
+              </div>
+              <div class="clear"></div>
+
+              <div class="left-column">Were you satisfied by the delivery of the website?</div>
+              <div class="right-column">
+                <input type="radio" name="satisfaction" value="1"/> 1
+                <input type="radio" name="satisfaction" value="2"/> 2
+                <input type="radio" name="satisfaction" value="3"/> 3
+                <input type="radio" name="satisfaction" value="4"/> 4
+                <input type="radio" name="satisfaction" value="5"/> 5
+                <input type="radio" name="satisfaction" value="6"/> 6
+                <input type="radio" name="satisfaction" value="7"/> 7
+                <input type="radio" name="satisfaction" value="8"/> 8
+                <input type="radio" name="satisfaction" value="9"/> 9
+                <input type="radio" name="satisfaction" value="10"/> 10
+              </div>
+              <div class="clear"></div>
+
+              <div class="left-column">Comments:</div>
+              <div class="right-column">
+                <textarea name="comments" rows="8" cols="45"></textarea>
+              </div>
+              <div class="clear"></div>
+
+              <div class="submit">
+                <input type="submit" value="Submit"/>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div id="footer">Sources: <a href="https://en.wikipedia.org/wiki/2048_(video_game)">Wikipedia: 2048 (video game)</a> | <a href="https://play2048.co/">Play 2048</a></div>
+    </div>
+    <!-- End your code here -->
+  </body>
+</html>
